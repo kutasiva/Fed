@@ -9,8 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        Text("Hello, World!")
+        Button(
+            "Open photo Library",
+            action: {
+            }
+        )
+            .padding()
     }
 }
 
