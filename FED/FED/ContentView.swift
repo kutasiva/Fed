@@ -10,12 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
 
+    @State private var isPresenting = false
+
     var body: some View {
-        Button(
-            "Open photo Library",
-            action: {
-            }
-        )
+        Button("Choose photo") {
+            self.isPresenting = true
+        }.sheet(isPresented: $isPresenting, content: {
+            ImagePicker()
+        })
             .padding()
     }
 }

@@ -13,6 +13,7 @@
 		BC5B5391251B489F00DC2DB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5B5390251B489F00DC2DB2 /* Assets.xcassets */; };
 		BC5B5394251B489F00DC2DB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5B5393251B489F00DC2DB2 /* Preview Assets.xcassets */; };
 		BC5B5397251B489F00DC2DB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5B5395251B489F00DC2DB2 /* LaunchScreen.storyboard */; };
+		BC97530E251F530600086719 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97530D251F530600086719 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BC5B5393251B489F00DC2DB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC5B5396251B489F00DC2DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5B5398251B489F00DC2DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC97530D251F530600086719 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BC5B538A251B489E00DC2DB2 /* AppDelegate.swift */,
 				BC5B538C251B489E00DC2DB2 /* SceneDelegate.swift */,
 				BC5B538E251B489E00DC2DB2 /* ContentView.swift */,
+				BC97530D251F530600086719 /* ImagePicker.swift */,
 				BC5B5390251B489F00DC2DB2 /* Assets.xcassets */,
 				BC5B5395251B489F00DC2DB2 /* LaunchScreen.storyboard */,
 				BC5B5398251B489F00DC2DB2 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5B538B251B489E00DC2DB2 /* AppDelegate.swift in Sources */,
+				BC97530E251F530600086719 /* ImagePicker.swift in Sources */,
 				BC5B538D251B489E00DC2DB2 /* SceneDelegate.swift in Sources */,
 				BC5B538F251B489E00DC2DB2 /* ContentView.swift in Sources */,
 			);
