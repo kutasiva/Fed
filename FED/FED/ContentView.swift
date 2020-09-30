@@ -11,14 +11,33 @@ import SwiftUI
 struct ContentView: View {
 
     @State private var isPresenting = false
+    @State private var image = UIImage()
 
     var body: some View {
-        Button("Choose photo") {
-            self.isPresenting = true
-        }.sheet(isPresented: $isPresenting, content: {
-            ImagePicker()
-        })
-            .padding()
+        VStack {
+            Image(uiImage: self.image)
+                .resizable()
+                .scaledToFill()
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .edgesIgnoringSafeArea(.all)
+            Button(action: {
+                self.isPresenting = true
+            }) {
+                HStack {
+                    Image(systemName: "photo")
+                    Text("Open photo library")
+                }
+
+            }.sheet(isPresented: $isPresenting, content: {
+                ImagePicker()
+            })
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(20)
+                .padding(.horizontal)
+
+        }
     }
 }
 
